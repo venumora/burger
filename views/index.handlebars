@@ -8,7 +8,7 @@
         <div class="col-sm-4">
             {{#each burgers}} {{#unless devoured}}
             <div style="margin-bottom: 16px" class="input-group">
-                <span class="input-group-addon">{{@index}}</span>
+                <span class="input-group-addon">{{id}}</span>
                 <input style="cursor: default;" type="text" disabled class="form-control" value="{{burger_name}}">
                 <span class="input-group-btn">
                     <button class="btn btn-default js-devour-it" data-key="{{id}}" type="button">Devour It !</button>
@@ -31,7 +31,7 @@
             {{#each burgers}}
                 {{#if devoured}}
                     <div style="margin-bottom: 16px" class="input-group">
-                        <span class="input-group-addon">{{@index}}</span>
+                        <span class="input-group-addon">{{id}}</span>
                         <input style="cursor: default;" type="text" disabled class="form-control" value="{{burger_name}}">
                     </div>
                 {{/if}}

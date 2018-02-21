@@ -4,8 +4,9 @@ USE burgers_db;
 
 CREATE TABLE burgers 
 (
-	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(60) NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
+	burger_name VARCHAR(60) NOT NULL,
     devoured TINYINT NOT NULL,
+    createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
